@@ -1,0 +1,426 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="stylesheet" href="Personal_Portfolio_style.css"></link>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ 
+
+ 
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md bg-dark" style="margin-bottom: 0px;border-radius: 0px;">
+    <div class="container-fluid">
+      <!-- <img src="women_portfolio.png" height="50px" style="border-radius: 50%;"> -->
+      <h5 class="navbar-brand" style="color: cyan;padding-top: 15px; padding-left: 25px;font-size:;color: white;text-decoration:underline;
+      text-shadow: 0 0 5px tomato, 0 0 5px tomato, 0 0 10px tomato, 0 0 30px tomato, 0 0 5px tomato, 0 0 5px tomato, 0 0 5px tomato;
+      font-family: cursive;
+    ">Portfolio</h5>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="border-radius: 20px;width: 50%;">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home"><span style="color: tomato;" id="tags"><</span>Home<span style="color: tomato;font-size: 18px;">/></span></a>
+            </li>&nbsp&nbsp&nbsp
+            <li class="nav-item">
+              <a class="nav-link" href="#education"><span style="color: tomato;"><</span>Education<span style="color: tomato;font-size: 18px;">/></span></a>
+            </li>&nbsp&nbsp&nbsp
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"><span style="color: tomato;"><</span>Projects<span style="color: tomato;font-size: 18px;">/></span></a>
+            </li>&nbsp&nbsp&nbsp
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"><span style="color: tomato;font-size: 18px;"><</span>Skills<span style="color: tomato;font-size: 18px;">/></span></a>
+            </li>&nbsp&nbsp&nbsp
+            <li class="nav-item">
+              <a class="nav-link" href="#form"><span style="color: tomato;font-size: 18px;"><</span>Form<span style="color: tomato;font-size: 18px;">/></span></a>
+            </li>&nbsp&nbsp&nbsp
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container-fluid bg-dark text-light py-5" id="home">
+    <div class="row">
+      <div class="text-center">
+        <img src="women_portfolio.png" alt="women image" id="Portfolio_img" class="rounded-circle img-fluid mb-2" width="300px" height="400px">
+      </div>
+      <div class="text-center">
+        <p style="font-size: 20px; padding-top: 10px;"><span style="color: white; font-weight:800;font-size: 28px;font-family: calibri;">Hi, I'm Saniya</span><br><span style="color: white; font-weight: ;font-size: 24px;font-family: calibri;color: tomato;" id="typing-effect"></span></p>
+        
+       <div style="color: white;font-size: 17px;">
+    I'm Currently in my Second year pursuing BscIT. I am an aspiring IT student at St.Xaviers college, with a strong foundation in C,<br> C++, Python and Data Analysis using pandas and numpy.Seeking opportunities <br> to apply and enhance my techical skills through internships and collaborative projects.
+    </div> 
+    <br>
+    <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a href="https://www.instagram.com/saniya_mac09/" class="me-3"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in fa-xl"></i></a><br>
+          <button type="button" class="btn btn-outline-light mt-3 cv" id="email_toggle" style="background-color: tomato;"><a href="#" style="text-decoration: none;color: white;"><span class="fa-regular fa-envelope"></span>&nbspContact Me</a></button>&nbsp&nbsp&nbsp
+
+          <button type="button" class="btn btn-outline-light mt-3 cv"><a href="resume.pdf" style="text-decoration:none;color: white;"><span class="fa-solid fa-download"></span>&nbspView Resume</a></button><br>
+          <a id="emailDisplay" href="#" style="color: white; display: none; margin-top: 10px;"></a>
+      </div>
+    </div>
+  </div>
+ 
+<!-- Education -->
+<div class="container-fluid bg-dark" style="padding-bottom: 50px;" id="education">
+    <h1 style="color: white; line-height: 70px;padding-left: 10px;padding-top: 20px;">Education</h1>
+</div>
+</div>
+<div class="container-fluid bg-dark" style="padding-bottom: 350px;">
+    <div class="table-responsive">
+   <table class="table table-borderedless table-hover table-dark">
+            <thead style="font-size:18px;">
+                <tr style="line-height: 36px;">
+                    <th>Class</th>
+                    <th>School/College</th>
+                    <th>Board/University</th>
+                    <th>Marks/CGPA</th>
+                    <th>Year</th>
+                    <th>Marksheet</th>
+                </tr>
+            </thead>
+            <tbody style="font-size:17px;">
+                <tr>
+                    <th>BscIT</th>
+                    <td>St.Xavier's College</td>
+                    <td>Mumbai University</td>
+                    <td>9.64</td>
+                    <td>2023-2024</td>
+                    <td><a href="2nd sem result.pdf" style="text-decoration: none;">View</a></td>
+                </tr>
+                <tr>
+                    <th>Higher Secondary School</th>
+                    <td>St.Joseph College</td>
+                    <td>HSC</td>
+                    <td>92.33%</td>
+                    <td>2022-2023</td>
+                    <td><a href="12th marksheet.pdf" style="text-decoration: none;">View</a></td>
+                </tr>
+                <tr>
+                    <th>Secondary School</th>
+                    <td>Carmel Convent High School</td>
+                    <td>SSC</td>
+                    <td>95.00%</td>
+                    <th>2020-2021</th>
+                    <td><a href="10th marksheet.pdf" style="text-decoration: none;">view</a></td>
+                </tr>
+            </tbody>
+
+        </table> 
+    </div>
+        <br>
+        <h4 style="color:white; padding-top: 80px; text-align: center; padding-bottom: 50px;">Extracurricular Activities and Contributions</h4>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <div style="background-color: #333; color: white; width: 400px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+        <p style="color: tomato; font-weight: bold;">Writer for BITMAP Magazine 2024-2025</p>
+        <p>The Magazine is published by the IT Department. The title of the article was “Navigating the Risk of Generative AI”.</p>
+    </div>
+    <div style="background-color: #333; color: white; width: 400px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+        <p style="color: tomato; font-weight: bold;">Participation in Nandurbar Project 2023-2024 | AICUF</p>
+        <p>Contributed to the project focused on teaching English to rural women, and received a certification in recognition of the efforts.</p>
+    </div>
+    <div style="background-color: #333; color: white; width: 400px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+        <p style="color: tomato; font-weight: bold;">Cultural/Annual Event</p>
+        <p>Volunteer for the Malahar Event.</p>
+    </div>
+</div>
+
+    </div>
+
+<!--Projects -->
+ <div class="container-fluid bg-dark" id="projects">
+<div class="row">
+    <h1 style="color: white; line-height: 70px;">Projects</h1>
+</div>
+</div>  
+<div class="container-fluid bg-dark">
+    <div class="project-list">
+        <div class="project-card">
+            <img src="to-do-list.png" alt="to-do-list" class="project-image">
+            <h3 id="project-header">To-Do-List</h3>
+            <div class="project-text">This application enables users to enter tasks and includes an option to delete them. It is built using HTML, JavaScript, CSS, and Bootstrap.</div>
+        </div>
+        <div class="project-card">
+            <img src="calculator_proj1.png" alt="Digital calculator" class="project-image">
+            <h3 id="project-header">Digital Calculator</h3>
+            <div class="project-text">Users can perform basic mathematical operations. It is built using HTML, JavaScript, CSS and Bootstrap.</div>
+        </div>
+        <div class="project-card">
+            <img src="digital_clock.png" alt="Digital clock" class="project-image">
+            <h3 id="project-header">Digital Clock</h3>
+            <div class="project-text">Displays the time and is built using HTML, jQuery, CSS, and Bootstrap.</div>
+        </div>
+        <div class="project-card">
+            <img src="sip&savor.png" alt="Sip & Savor" class="project-image">
+            <h3 id="project-header">Sip & Savor-Coffee/Tea management</h3>
+            <div class="project-text">The application allows customers to choose between tea or coffee, enter the desired quantity, and then displays the total bill.The application is built using HTML, CSS, JavaScript, and Bootstrap.</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Skills -->
+<div class="container-fluid bg-dark" style="padding-top: 80px;padding-bottom: 50px;padding-left: 20px;">
+<div class="row">
+    <h1 style="color: white; line-height: 20px;">Skills</h1>
+</div>
+</div>
+<div class="container-fluid bg-dark" style="padding-left: 50px; padding-bottom: 50px;" id="skills">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="skill-name" style="word-spacing: 250px;">HTML|CSS   100%</div>
+            <div class="line">
+                <div class="html_css"></div>
+            </div><br>
+            <div class="skill-name" style="word-spacing: 170px;">JavaScript   75%</div>
+            <div class="line"><div class="javascript"></div></div><br>
+            <div class="skill-name" style="word-spacing: 250px;">Bootstrap   95%</div>
+            <div class="line"><div class="bootstrap"></div></div><br>
+            <div class="skill-name" style="word-spacing: 50px;">PHP   30%</div>
+            <div class="line"><div class="php"></div></div><br>
+        </div>
+        <div class="col-md-6">
+            <div class="skill-name" style="word-spacing: 255px;">C++   88%</div>
+            <div class="line"><div class="cpp"></div></div><br>
+            <div class="skill-name" style="word-spacing: 260px;">Python   95%</div>
+            <div class="line"><div class="python"></div></div><br>
+            <div class="skill-name" style="word-spacing: 195px;">Numpy|Pandas   90%</div>
+            <div class="line"><div class="numpy_pandas"></div></div><br>
+            <div class="skill-name" style="word-spacing: 230px;">Java   80%</div>
+            <div class="line"><div class="java"></div></div><br>
+        </div> 
+    </div>
+</div>
+   
+<!-- form -->
+ <div class="container-fluid bg-dark" style="padding-left: 20px; padding-top: 40px;padding-bottom: 60px; id="form>
+    <div class="row">
+        <h1 style="color: white; line-height: 10px;">Form</h1>
+    </div>
+</div>
+
+<div class="container-fluid bg-dark d-flex justify-content-center align-items-center" style="padding-bottom: 50px;" id="form">
+    <div class="form_container p-4 rounded col-md-8 col-lg-6" style="background-color:#333;">
+        <h2 class="text-white text-center">Register Here!</h2>
+        <p class="text-white text-center">Free Workshop on Introduction to HTML AND CSS<br></p> 
+        
+        <form action="workshopForm.php" method="POST">
+            <div class="form-group">
+                <label for="txt_fname" class="text-white">First Name <span id="required">*</span></label>
+                <input type="text" id="txt_fname" name="txt_fname" class="form-control" style="background-color: transparent;color: tomato;box-shadow: none;
+                outline: 1px solid grey;border: 0px solid white;" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="txt_lname" class="text-white">Last Name <span id="required">*</span></label>
+                <input type="text" id="txt_lname" name="txt_lname" class="form-control"style="background-color: transparent;color: tomato;box-shadow: none;
+                outline: 1px solid grey;border: 0px solid white;" required>
+            </div>
+            <div class="row mt-3">
+                <div class="form-group col-md-6">
+                    <label for="txt_email" class="text-white">Email ID <span id="required">*</span></label>
+                    <input type="email" id="txt_email" name="txt_email" placeholder="xyz@gmail.com" class="form-control" style="background-color: transparent;color: tomato;box-shadow: none;
+                outline: 1px solid grey;border: 0px solid white;" required>
+                    <div id="emailError"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="mobile" class="text-white">Mobile No.</label>
+                    <input type="tel" id="mobile" name="mobile" class="form-control" style="background-color: transparent;color: tomato;box-shadow: none;
+                outline: 1px solid grey;border: 0px solid white;">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="form-group col-md-6">
+                    <label for="timeslot" class="text-white">Choose Time Slot <span id="required">*</span></label>
+                    <div class="input_radio">
+                        <input type="radio" id="opt10" name="timeslot" value="10am">
+                        <label for="opt10" class="text-white">10 am</label><br>
+                        <input type="radio" id="opt2" name="timeslot" value="2pm">
+                        <label for="opt2" class="text-white">2 pm</label><br>
+                        <input type="radio" id="opt6" name="timeslot" value="6pm">
+                        <label for="opt6" class="text-white">6 pm</label><br>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="occupation" class="text-white">Current Occupation</label>
+                    <select name="occupation" id="occupation" class="form-control" style="background-color: transparent;color: white;box-shadow: none;
+                outline: 1px solid grey;border: 0px solid white;">
+                        <option value="NA">--select--</option>
+                        <option value="Student">Student</option>
+                        <option value="Freelancer">Freelancer</option>
+                        <option value="Employee">Employee</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Self-employed">Self-employed</option>
+                        <option value="Unemployed">Unemployed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary me-3" style="box-shadow: 0 0 10px 0 tomato;background-color: transparent;border: 1px solid tomato;" onclick="emailValidation()">
+                <input type="reset" name="reset" value="Clear" class="btn btn-secondary" style="box-shadow: 0 0 10px 0 tomato;background-color: transparent;border: 1px solid tomato;">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function emailValidation(){
+    var email = document.getElementById("txt_email").value.trim();
+    var pattern = /^[a-z0-9_.]+@[a-z]+.[a-z]{2,5}$/i;
+    var emailError = document.getElementById("emailError");
+
+    if(email === "" || !pattern.test(email)){
+        emailError.innerHTML = "Invalid email";
+        emailError.style.color = "red";
+        return false;  // Prevent form submission
+    } else {
+        emailError.innerHTML = "";  // Clear any previous error message
+        return true;  // Allow form submission
+    } 
+}
+
+
+   
+</script>
+
+
+<script>
+
+$(document).ready(function() {
+    $('.project-card').hover(
+        function() {
+            // Increase height of project card and display text
+            $(this).animate({
+                height: '+=130px'
+            }, 500); // Animation duration of 500ms
+
+            $(this).find('.project-text').stop().fadeIn(500); // Fade-in for project-text
+        },
+
+        function() {
+            // Decrease height of project card and hide text
+            $(this).animate({
+                height: '-=130px'
+            }, 500); // Animation duration of 500ms
+
+            $(this).find('.project-text').stop().fadeOut(500); // Fade-out for project-text
+        }
+    );
+
+    
+    $('#email_toggle').click(function() {
+        var email = "saniyamachdo2023@gmail.com";
+        var emailDisplay = $('#emailDisplay');
+
+        if (emailDisplay.is(':visible')) {
+            // If email is already visible, hide it
+            emailDisplay.fadeOut(500);
+        } else {
+            // If email is hidden, show it
+            emailDisplay.text("Email: " + email).fadeIn(500);
+        }
+    });
+});
+
+</script>
+<script>
+    $(document).ready(function() {
+    function typeEffect(element, textArray, typingSpeed, deletingSpeed, newTextDelay) {
+        let textIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+        
+        function type() {
+            let currentText = textArray[textIndex];
+            let visibleText = deleting ? currentText.substring(0, charIndex--) : currentText.substring(0, charIndex++);
+            $(element).text(visibleText);
+            
+            if (!deleting && charIndex > currentText.length) {
+                deleting = true;
+                setTimeout(type, newTextDelay);
+            } else if (deleting && charIndex < 0) {
+                deleting = false;
+                charIndex = 0;
+                textIndex = (textIndex + 1) % textArray.length;
+                setTimeout(type, newTextDelay);
+            } else {
+                setTimeout(type, deleting ? deletingSpeed : typingSpeed);
+            }
+        }
+        
+        type();
+    }
+
+    const textArray = ["Web Developer", "Data Analyst"];
+    typeEffect("#typing-effect", textArray, 160, 100, 1500);
+});
+    
+</script>
+
+<!-- <?php
+    $servername="localhost:3307";
+    $username="root";
+    $password="";
+    $dbname="workshop_info";
+
+
+    $conn=new mysqli($servername,$username,$password,$dbname);
+
+    if($conn->connect_error){
+        die("connection failed: ".$conn->connect_error);
+    }
+
+    // else{
+    //  echo "connection successful";
+    // }
+
+    $fname = $_POST['txt_fname'];
+    $lname = $_POST['txt_lname'];
+    $email_id = $_POST['txt_email'];
+    $mobile_no = $_POST['mobile'];
+    $time_slot = $_POST['timeslot'];
+    $occupation = $_POST['occupation'];
+
+    // echo "<h3> $fname<br> $email_id<br>$time_slot<br>$occupation";
+
+    $stmt = $conn->prepare("INSERT INTO participants(fname,lname,email_id,mobile_no,time_slot,occupation) VALUES(?,?,?,?,?,?)");
+
+    $stmt->bind_param("sssdss",$fname,$lname,$email_id,$mobile_no,$time_slot,$occupation);
+
+    if($stmt->execute()){
+        echo "<div class='container-fluid bg-dark'>
+       <i class='fa-solid fa-check fa-2xl' style='color: #12c41e;font-size:50px'></i><br><br><h1>Congratulations $fname!</h1><br>
+              <h3>You have successfully registered for the workshop</h3></div>";
+    }
+    else{
+       echo "<div class='container-fluid bg-dark'><i class='fa-solid fa-xmark fa-2xl' style='color: #f52314;font-size:50px'></i><br><br><h1> Oops!</h1><br>
+              <h3>Registration unsuccessful</h3></div>";
+        echo "<h3>error: $stmt->error</h3>";
+    }
+
+    $stmt->close();
+    $conn->close();
+?>
+ -->
+
+
+</body>
+</html>
